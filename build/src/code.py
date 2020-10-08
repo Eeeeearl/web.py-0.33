@@ -62,7 +62,7 @@ class DrawData:
 # 连接数据库
 def connect_db():
     try:
-        conn = cx_Oracle.connect('sj', 'sj', 'ksscan.luxshare.com.cn:1521/smt.luxshare.com.cn')
+        conn = cx_Oracle.connect()
         return conn
     except BaseException:
         print("Connect Error!")
